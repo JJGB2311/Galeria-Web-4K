@@ -1,1 +1,0 @@
-# Galeria-Web-4K
