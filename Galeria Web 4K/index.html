@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Galeria Web 4K</title>
+	<link rel="shorcut icon" href="img/favicon.png">
+	<link rel="stylesheet" href="css/normas.css">
+	<link rel="stylesheet" href="css/stilos.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" href="css/Animacion.css">
+	<link rel="stylesheet" href="css/responsivo.css">
+	<script src="js/responsiveslides.js"></script>
+
+
+
+	<script>
+		$(document).ready(function () {
+			$("#slider-home").responsiveSlides({
+				speed: 900,
+				nav: true,
+				namespace: 'slid-btns',
+				titleAnimation: 'bounceIn'
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<header class="cabecera">
+		<div class="container clearfix">
+			<div class="logo">
+				<img src="img/Logo Galeria Web 4Kp.png">
+				<!--logo-->
+			</div>
+			<nav class="menu">
+				<ul class="clearfix">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="singIn.html">sesion</a></li>
+					<li><a href="singUp.html">Reguistro</a></li>
+					<li><a href="#">Quienes somos</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="slider">
+		<ul class="rslides" id="slider-home">
+			<li>
+				<img src="img/BB.png" alt="">
+				<div class="caption">
+
+					<p class="wow"></p>
+				</div>
+			</li>
+			<li>
+				<img src="img/D3.png" alt="">
+				<div class="caption">
+					<h3 class="wow">Imagina</h3>
+					<p class="wow">Almacena en tu galeria todos tus recuerdos más preciados de tu vida</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/D1.png" alt="">
+				<div class="caption">
+					<h3 class="wow">Diseña</h3>
+					<p class="wow">Diseña todo lo que tu mente puede crear en tu imaginación y plantéala en tu galería
+					</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/D2.png" alt="">
+				<div class="caption">
+					<h3 class="wow">Edita</h3>
+					<p class="wow">Personaliza tus Fotografías hasta donde tu imaginación sea el limite</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/D4.png" alt="">
+				<div class="caption">
+
+					<p class="wow">Recuerda los mejores momentos de tu vida</p>
+				</div>
+			</li>
+			</li>
+			<li>
+				<img src="img/DF.png" alt="">
+				<div class="caption">
+
+					<p class="wow">Sueña</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<section class="servicios">
+		<hgroup class="titulos-wrap">
+			<h2 class="titulo wow bounceIn" data-wow-delay="0.3s">Servicios</h2>
+			<h4 class="subtitulo wow bounceIn" data-wow-delay="0.6s">Los mejor en fotos Galeria 4K </h4>
+		</hgroup>
+		<div class="container">
+			<article class="item">
+				<div class="icon">
+					<span class="fa fa-cloud fa-4x wow bounceIn" data-wow-delay="0.1s"></span>
+				</div>
+				<header>
+					<h3><a href="#">Servicio de fotografías 24/7</a></h3>
+					<p>Ofrecemos que crees tú galería de forma online para que puedas accesar a tus fotos cuando tu
+						quieras y a ha hora que desees.</p>
+				</header>
+			</article>
+			<article class="item">
+				<div class="icon">
+					<span class="fa  fa-camera  fa-4x wow bounceIn" data-wow-delay="0.4s"></span>
+				</div>
+				<header>
+					<h3><a href="#">Servicio de personalización de Gálería </a></h3>
+					<p>Galería web 4K te dará la opción de que puedas visualizar tu galería de la manera que desde. Para
+						que siempre estés
+						actualizado con estilos modernos e innovadores.</p>
+				</header>
+			</article>
+			<article class="item">
+				<div class="icon">
+					<span class="fa fa-users fa-4x wow bounceIn" data-wow-delay="0.7s"></span>
+				</div>
+				<header>
+					<h3><a href="#">Registo</a></h3>
+					<p>Galería web 4K te ofrece que con tu usuario puedas acceso desde donde estés y asi puedas tener
+						privacidad con tu galería
+						personalizada.</p>
+				</header>
+			</article>
+		</div>
+	</section>
+	<section class="posts-wrap">
+		<hgroup class="titulos-wrap">
+			<h2 class="titulo wow fadeIn" data-wow-delay="0.3s">Mis Últimos Posts</h2>
+			<h4 class="subtitulo wow bounceIn" data-wow-delay="0.6s">Galeria Web 4K Diseños</h4>
+		</hgroup>
+		<div class="container">
+			<figure class="post wow fadeInLeft" data-wow-delay="0.3s">
+				<img src="img/1.jfif" alt="Blog 1">
+				<figcaption>
+					<center>
+					<h3><a href="post/">Rio</a></h3>
+					</center>
+					<p class="date"><i class="fa fa-calendar-o"></i>15 Septiembre, 2019</p>
+				</figcaption>
+			</figure>
+			<figure class="post wow fadeInLeft" data-wow-delay="0.6s">
+				<img src="img/2.jpg" alt="Blog 2">
+				<figcaption>
+					<h3>Tikal</h3>
+					<p class="date"><i class="fa fa-calendar-o"></i>05 Marzo, 2018</p>
+				</figcaption>
+			</figure>
+			<figure class="post wow fadeInLeft" data-wow-delay="0.9s">
+				<img src="img/3.jpg" alt="Blog 3">
+				<figcaption>
+					<h3><a href="post/">Coban</a></h3>
+					<p class="date"><i class="fa fa-calendar-o"></i>05 Diciembre, 2019</p>
+				</figcaption>
+			</figure>
+			<figure class="post wow fadeInLeft" data-wow-delay="1.2s">
+				<img src="img/4.jpg" alt="Blog 4">
+				<figcaption>
+					<h3><a href="post/">El quetzal.</a></h3>
+					<p class="date"><i class="fa fa-calendar-o"></i>15 nviembre, 2014</p>
+				</figcaption>
+			</figure>
+		
+			
+		</div>
+	</section>
+	<section class="contactme clearfix">
+		<div class="left">
+			<span class="dotted">¿Necesitas algo?</span> Solo ponte en contacto conmigo y manos a la obra.
+		</div>
+		<div class="right">
+			<a href="contacto" class="btn"> ¡Contáctame!</a>
+		</div>
+	</section>
+	<footer class="footer">
+		<p>Todos los derechos reservados &copy; 2019. Desarrollado por <a href="#">Risko</a></p>
+	</footer>
+</body>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script>
+	new WOW().init();    
+</script>
+
+</html>

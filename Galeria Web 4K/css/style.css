@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+ background: url(../img/bg.jpg);
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+background-position: 50%,50%;
+background-size: auto;
+}
+* {
+  box-sizing: border-box;
+  min-width: 240px;
+}
+.main
+{
+margin: auto;
+margin-top: 10%;
+  width: 80%;
+  height: auto;
+ display: flex;
+ flex-wrap: wrap;
+ background: none;
+}
+.logo 
+{
+  margin: auto;
+  width: 400px;
+  height: 400px;
+}
+.logo img {
+  width: 100%;
+  height: auto;
+}
+.contenedor{
+  width: 100%;
+  padding: 15px;
+}
+.formulario{
+  margin: auto;
+  margin-top: 0;
+  width: 60%;
+  background:none;
+
+}
+h1{
+  text-align: center;
+  color: cadetblue;
+  font-size: 40px;
+}
+input[type="text"],
+input[type="password"]{
+  font-size: 20px;
+  width: 82%;
+  padding: 10px;
+  border: none;
+  background: none;
+  color: #ffff;
+}
+.input-contenedor{
+  width: 80%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid cadetblue;
+}
+.icon{
+  min-width: 50px;
+  text-align: center;
+  color: cadetblue;
+}
+.button{
+  border: none;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  background:  #0d9ba0;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button:hover{
+  background: cadetblue;
+}
+p{
+  text-align: center;
+  color: aliceblue;
+}
+.link{
+  text-decoration: none;
+    color: cadetblue;
+  font-weight: 600;
+}
+.link:hover{
+   color: #1a2537;
+}
+@media(min-width:1000px)
+{
+  .formulario{
+      margin: auto;
+      width: 500px;
+      margin-top: 25px;
+      border-radius: 2%;
+  }
+  input[type="text"],
+input[type="password"]{
+  font-size: 20px;
+  width: 20%;
+  padding: 10px;
+  border: none;
+  background: none;
+  color: #ffff;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
