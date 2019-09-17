@@ -14,6 +14,7 @@
 	float:left;
 	width:40%;
 	padding:1% 0;
+	
 }
 a{
 	color: #505961;
@@ -26,12 +27,16 @@ a:hover{
 }
 .cabecera .menu{
 	float: right;
+
+	
 }
 .cabecera .menu ul{
 	list-style:none;
 	position: relative;
 	margin:0;
 	padding:0;
+	
+
 }
 .cabecera .menu ul li{
 	float: left;
@@ -40,10 +45,12 @@ a:hover{
 	padding:0 6px;
 	display:block;
 	line-height:600%;
+
 }
-.cabecera .menu ul li a:hover,.cabecera .menu ul li.active a{
+.cabecera .menu ul li a:hover,.cabecera .menu ul li.active a{ /* color de las letras*/
 	color: #fff;
 	box-shadow: 0 84px 0 #0fafe0 inset;
+	
 }
 .wrap {
 	padding-top: 40px;
@@ -69,7 +76,7 @@ a:hover{
 	padding:.2em 0;
 	font-size:2em;
 	text-transform:uppercase;
-	color:#2fb677;
+	color:#0aa6bb;
 }
 .titulos-wrap .subtitulo{
 	margin:0;
@@ -103,7 +110,7 @@ a:hover{
 	width:100px;
 	height:100px;
 	border-radius:50%;
-	border:1px solid #1bc74e;	
+	border:1px solid #28cce2;	
 }
 .servicios .item .icon span{
 	line-height:100px;
