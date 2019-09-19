@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="css/Animacion.css">
     <link rel="stylesheet" href="css/responsivo.css">
     <script src="js/responsiveslides.js"></script>
+    <link rel="stylesheet" href="css/estiloContacto.css">
 </head>
 
 <body>
-
     <script>
         $(document).ready(function () {
             $("#slider-home").responsiveSlides({
@@ -47,6 +47,36 @@
                 </nav>
             </div>
         </header>
+
+        <!--Contenido de la pestaña Contáctenos-->
+        <section id="contactanos">
+            <div id="encabezado">
+                <h2>Contáctanos</h2>
+                <h3>Póngase en contacto con nosotros</h3>
+            </div>
+            <form id="formulario" method="POST" action="">
+                Nombre y Apellidos: <br>
+                <input type="text" name="txtNombreApellido" /> <br><br>
+                Correo electrónico: <br>
+                <input type="text" name="txtCorreo" /></br></br>
+                Asunto: <br>
+                <input type="text" name="txtAsunto" /></br></br>
+                Cuentanos en que podemos ayudarte: </br>
+                <textarea name="txtAyuda"></textarea></br></br>
+                
+                <input type="submit" name="btnEnviar" value="ENVIAR" />    
+                <input type="image" src="img/Enviar.png" width="30" height="30" name="btnEnviar"
+                    style="margin-left:10px; cursor: hand; cursor: pointer; border: 0px none;" value="Enviar Datos">
+                </br></br>
+            </form>
+            <div id="contactos">
+                <h3>Teléfonos</h3>
+                <h3>Correos</h3>
+            </div>
+            <div id="pie">
+                    Pic Lab  -  Derechos Reservados 2019
+            </div>
+        </section>
 
     </body>
 

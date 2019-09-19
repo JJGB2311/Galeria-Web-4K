@@ -1,0 +1,57 @@
+#contactanos
+{
+    /* background-color: rgb(41, 144, 212); */
+    margin: 0;
+    display: grid;
+    grid-template-columns: 55% auto;
+    grid-template-rows: auto auto 60px;
+    grid-template-areas: "enc enc"
+                        "form cont" 
+                        "footer footer";
+}
+#encabezado
+{
+    /* background-color: violet;    */    
+    text-align: center;    
+    grid-area: enc;
+}
+#encabezado h2
+{
+    color: black;
+    font-size: 35px;
+    font-family: "Tahoma";        
+}
+#encabezado h3
+{
+    font-style: oblique;
+    font-size: 20px;
+}
+#formulario
+{
+    background-color: blue;
+    color: black;
+    grid-area: form;
+}
+#formulario h2, options
+{
+    color: black;
+}
+#contactos
+{
+    background-color: red;    
+    grid-area: cont;
+}
+#contactos h3
+{
+    color: black;
+}
+#pie
+{
+    /* background-color: brown; */
+    color: black;
+    padding: 20px;    
+    text-align: center;
+    font-family: "Tahoma";        
+    font-style: oblique;
+    grid-area: footer;
+}
