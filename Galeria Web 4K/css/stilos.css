@@ -6,9 +6,9 @@
 	clear: both;
 }
 .container{
-	width:65%;
+	width:90%;
 	margin:0 auto;
-	padding: 0 15px;
+	padding: 0 15%;
 }
 .cabecera .logo{  /* valor del logo*/
 	float:left;
@@ -229,7 +229,7 @@ a:hover{
 	border-bottom:1px solid #fff;
 }
 .paginacion li a:hover, .paginacion li.active a{
-	border-top-color:#2fb677;
+	border-top-color:#1c97bd;
 	border-bottom-color:#2fb677;
 	border-radius:50%;
 }
@@ -249,12 +249,12 @@ a:hover{
 	width: 20%;
 }
 .contactme .dotted{
-	color: #505961;
+	color: #010a13;
 	text-transform: uppercase;
 	font-weight: 400;
 }
 .btn{
-	background: #2fb677;
+	background: #0ba1dd;
 	padding: .5em 1.1em;
 	border-radius: 4px;
 	color: white !important;
@@ -264,15 +264,15 @@ a:hover{
 	padding: 15px;
 	margin: 0;
 	text-align: center;
-	background: #505961;
+	background: #5176a0;
 	color: white;
 }
 .footer p{
 	margin: 0;
 }
 .footer a{
-	color: #7d8781;
+	color: #1805c5;
 }
 .footer a:hover{
-	color: #2fb677;
+	color: #62daff;
 }
