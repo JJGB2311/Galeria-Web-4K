@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Pic Lab</title>
+	<link rel="shorcut icon" href="img/favicon.png">
+	<link rel="stylesheet" href="css/normas.css">
+	<link rel="stylesheet" href="css/stilos.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" href="css/Animacion.css">
+	<link rel="stylesheet" href="css/responsivo.css">
+	<script src="js/responsiveslides.js"></script>
+
+
+
+	<script>
+		$(document).ready(function () {
+			$("#slider-home").responsiveSlides({
+				speed: 900,
+				nav: true,
+				namespace: 'slid-btns',
+				titleAnimation: 'bounceIn'
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<header class="cabecera">
+		<div class="container clearfix">
+			<div class="logo">
+				<img src="img/LOGO 2Km.jpg">
+				<!--logo-->
+			</div>
+			<nav class="menu">
+				<ul class="clearfix">
+				
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="singIn.html">sesion</a></li>
+					<li><a href="singUp.html">Registro</a></li>
+					<li><a href="Quienes somos.html">Quienes somos</a></li>
+					<li><a href="contactenos.html">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="slider">
+		<ul class="rslides" id="slider-home">
+			<li>
+				<img src="img/BB.png" alt="">
+				<div class="caption">
+
+					<p class="wow"></p>
+				</div>
+			</li>
+			<li>
+				<img src="img/D3.png" alt="">
+				<div class="caption">
+					<h3 class="wow">Imagina</h3>
+					<p class="wow">Almacena en tu galería todos tus recuerdos más preciados de tu vida.</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/D1.png" alt="">
+				<div class="caption">
+					<h3 class="wow">Diseña</h3>
+					<p class="wow">Diseña todo lo que tu mente pueda imaginación y plantéala en tu galería
+					</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/D2.png" alt="">
+				<div class="caption">
+					<h3 class="wow">Edita</h3>
+					<p class="wow">Personaliza tus Fotografías hasta donde tu imaginación sea el limite</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/D4.png" alt="">
+				<div class="caption">
+
+					<p class="wow">Recuerda los mejores momentos de tu vida</p>
+				</div>
+			</li>
+			</li>
+
+		</ul>
+	</div>
+	<section class="servicios">
+		<hgroup class="titulos-wrap">
+			<h2 class="titulo wow bounceIn" data-wow-delay="0.3s">Servicios</h2>
+			<h4 class="subtitulo wow bounceIn" data-wow-delay="0.6s">Los mejor en fotos Pic Lab</h4>
+		</hgroup>
+		<div class="container">
+			<article class="item">
+				<div class="icon">
+					<span class="fa fa-cloud fa-4x wow bounceIn" data-wow-delay="0.1s"></span>
+				</div>
+				<header>
+					<h3><a href="#">Servicio de fotografías online</a></h3>
+					<p>Crea tú galería online para que puedas acceso a tus fotos cuando tu quieras y a la hora que quieras.</p>
+				</header>
+			</article>
+			<article class="item">
+				<div class="icon">
+					<span class="fa  fa-camera  fa-4x wow bounceIn" data-wow-delay="0.4s"></span>
+				</div>
+				<header>
+					<h3><a href="#">Servicio de personalización de Gálería </a></h3>
+					<p>Pic Lab te da la opción de que puedas visualizar tu galería de la manera que desde. Para que siempre estés actualizado
+					con estilos modernos e innovadores.</p>
+				</header>
+			</article>
+			<article class="item">
+				<div class="icon">
+					<span class="fa fa-users fa-4x wow bounceIn" data-wow-delay="0.7s"></span>
+				</div>
+				<header>
+					<h3><a href="#">Seguridad</a></h3>
+					<p>Pic Lab te ofrece seguridad con tus fotos personales. Mediante el acceso con tu cuenta de Pic Lab desde donde estés y
+					asi puedas tener privacidad con tu galería personalizada.</p>
+				</header>
+			</article>
+			
+		</div>
+	</section>
+		<section class="posts-wrap">
+		<hgroup class="titulos-wrap">
+			<h2 class="titulo wow fadeIn" data-wow-delay="0.3s">Redes Sociales</h2>
+			<h4 class="subtitulo wow bounceIn" data-wow-delay="0.6s">Pic Lab</h4>
+		</hgroup>
+		<div class="container">
+			<figure class="post wow fadeInLeft" data-wow-delay="0.3s">
+				<img src="img/Facebook.png" alt="Blog 1">
+				<figcaption>
+					
+					<h3><a href="post/">Facebook</a></h3>
+			
+					<p class="date"><i class="fa-facebook"></i> Pic lab</p>
+				</figcaption>
+			</figure>
+			<figure class="post wow fadeInLeft" data-wow-delay="0.6s">
+						<center>
+				<img src="img/instagram.png" alt="Blog 2">
+				</center>
+				<figcaption>
+					<h3>Instagram</h3>
+					<p class="date"><i class="fa-instagram"></i>@PicLab</p>
+				</figcaption>
+			</figure>
+			<figure class="post wow fadeInLeft" data-wow-delay="0.9s">
+				<img src="img/Gmail.png" alt="Blog 3">
+				<figcaption>
+					<h3><a href="post/">Gmail</a></h3>
+					<p class="date"><i class="fa-mail-forward"></i>piclab@gmail.com</p>
+				</figcaption>
+			</figure>
+			<figure class="post wow fadeInLeft" data-wow-delay="1.2s">
+				<center>
+				<img src="img/Youtube.png" alt="Blog 4">
+				</center>
+				<figcaption>
+					<h3><a href="post/">Youtube</a></h3>
+					<p class="date"><i class="fa-mail-forward"></i>www.youtube.com/piclab</p>
+					
+				</figcaption>
+			</figure>
+		
+			
+		</div>
+	</section>
+	<section class="contactme clearfix">
+		<div class="left">
+			<span class="dotted">¿Necesitas algo?</span> Contáctatenos y con gusto te atenderemos.
+		</div>
+		<div class="right">
+			<a href="contactenos.html" class="btn"> ¡Contáctame!</a>
+		</div>
+	</section>
+	<footer class="footer">
+		<p>Todos los derechos reservados &copy; 2019. Desarrollado por <a href="#">Risko</a></p>
+	</footer>
+</body>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script>
+	new WOW().init();    
+</script>
+
+</html>
