@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="css/responsivo.css">
     <script src="js/responsiveslides.js"></script>
     <link rel="stylesheet" href="css/estiloContacto.css">
+    <!--Agregamos librerías ONLINE para hacer uso de Bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 </head>
 
 <body>
@@ -29,58 +33,119 @@
     </script>
     </head>
 
-    <body>
-        <header class="cabecera">
-            <div class="container clearfix">
-                <div class="logo">
-                    <img src="img/LOGO 2Km.jpg">
-                    <!--logo-->
-                </div>
-                <nav class="menu">
-                    <ul class="clearfix">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="singIn.html">sesion</a></li>
-                        <li><a href="singUp.html">Registro</a></li>
-                        <li><a href="Quienes somos.html">Quienes somos</a></li>
-                        <li><a href="contactenos.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
 
-        <!--Contenido de la pestaña Contáctenos-->
-        <section id="contactanos">
-            <div id="encabezado">
-                <h2>Contáctanos</h2>
-                <h3>Póngase en contacto con nosotros</h3>
+    <header class="cabecera">
+        <div class="container clearfix">
+            <div class="logo">
+                <img src="img/LOGO 2Km.jpg">
+                <!--logo-->
             </div>
-            <form id="formulario" method="POST" action="">
-                Nombre y Apellidos: <br>
-                <input type="text" name="txtNombreApellido" /> <br><br>
-                Correo electrónico: <br>
-                <input type="text" name="txtCorreo" /></br></br>
-                Asunto: <br>
-                <input type="text" name="txtAsunto" /></br></br>
-                Cuentanos en que podemos ayudarte: </br>
-                <textarea name="txtAyuda"></textarea></br></br>
-                
-                <input type="submit" name="btnEnviar" value="ENVIAR" />    
-                <input type="image" src="img/Enviar.png" width="30" height="30" name="btnEnviar"
-                    style="margin-left:10px; cursor: hand; cursor: pointer; border: 0px none;" value="Enviar Datos">
-                </br></br>
-            </form>
-            <div id="contactos">
-                <h3>Teléfonos</h3>
-                <h3>Correos</h3>
-            </div>
-            <div id="pie">
-                    Pic Lab  -  Derechos Reservados 2019
+            <nav class="menu">
+                <ul class="clearfix">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="singIn.html">sesion</a></li>
+                    <li><a href="singUp.html">Registro</a></li>
+                    <li><a href="Quienes somos.html">Quienes somos</a></li>
+                    <li><a href="contactenos.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Contenido de la pestaña Contáctenos-->
+    <section id="contactano">
+        <div id="encabezado">
+            <h2 class="">Contáctanos</h2>
+            <h3>Póngase en contacto con nosotros</h3> <br>
+        </div>
+
+        <section class="container">
+            <div class="main row">
+                <form class="col-xs-12 col-sm-7 lgcol-md-7 col-lg-7" method="POST" action="" name="frmCorreo">
+                    <div class="container-fluid" id="formulario">
+                        <br>
+                        <label for="lbNombreApellido">Nombre completo:</label>
+                        <input class="form-control" type="text" name="txtNombreApellido"
+                            placeholder="Ingrese su nombre completo" /> <br>
+                        <label for="lbCorreo">Correo electrónico:</label> <br>
+                        <input class="form-control" type="text" name="txtCorreo" placeholder="Ingrese su correo" />
+                        <small id="emailHelp" class="form-text text-muted">Tu correo nunca será compartirdo con
+                            terceros.</small>
+                        </br></br>
+
+                        <div class="form-group">
+                            <label for="lbAsunto">Asunto:</label>
+                            <select class="form-control" id="lbAsunto" name="txtAsunto">
+                                <option>Soporte</option>
+                                <option>Comentario</option>
+                                <option>Sugerencia</option>
+                                <option>Recomendación</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+
+                        <label for="lbCuentanos">Cuentanos en que podemos ayudarte:</label> </br>
+                        <textarea class="form-control" name="txtAyuda" style="height: 150px;"></textarea></br>
+
+                        <input class="btn btn-primary mb-2" type="submit" name="btnEnviar" value="ENVIAR" />
+                        </br></br>
+                    </div>
+                </form>
+
+                <!-- Force next columns to break to new line -->
+                <div class="w-100"></div>
+
+                <aside class="col-xs-12 col-sm-5 lgcol-md-5 col-lg-5">
+                    <div class="container-fluid" id="contactos">
+                        <h3 class="bg-info text-center">Teléfonos</h3>
+                        <ul class="list-inline">
+                            <li class="list-inline item">
+                                <img src="img/phone.bmp" alt="Teléfono" class="img-fluid img-thumbnail"> +502 4914-6519
+                                Juan Gámez
+                            </li>
+                            <li class="list-inline item">
+                                <img src="img/phone.bmp" alt="Teléfono" class="img-fluid img-thumbnail"> +502 5946-1474
+                                Randy Choc
+                            </li>
+                            <li class="list-inline item">
+                                <img src="img/phone.bmp" alt="Teléfono" class="img-fluid img-thumbnail"> +502 4220-7518
+                                Gustavo Perez
+                            </li>
+                            <li class="list-inline item">
+                                <img src="img/phone.bmp" alt="Teléfono" class="img-fluid img-thumbnail"> +502 5941-0269
+                                Edgar Casasola
+                            </li>
+                        </ul>
+
+                        <h3 class="bg-info text-center">Correo</h3>
+                        <img src="img/email.bmp" alt="Correo" class="img-fluid img-thumbnail"> piclab_support@gmail.com
+                        <br>
+                        <h3 class="bg-info text-center">Dirección</h3>
+                        <img src="img/company.bmp" alt="Dirección" class="img-fluid img-thumbnail"> 3a. Avenida 9-00
+                        zona 2, Interior Finca El
+                        Zapote, Guatemala 01002 <br>
+                        <h3 class="bg-info text-center">Horario</h3>
+                        <img src="img/calendar.bmp" alt="Horario" class="img-fluid img-thumbnail"> Lunes a Viernes: 8am
+                        - 6pm <br>
+                        <img src="img/calendar.bmp" alt="Horario" class="img-fluid img-thumbnail"> Sábados: 8am - 3pm
+                        <br>
+                        <br>
+                    </div>
+                </aside>
+
             </div>
         </section>
 
-    </body>
+        <div id="pie">
+            Pic Lab - Derechos Reservados 2019
+        </div>
+    </section>
 
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
 
-
+</body>
 
 </html>

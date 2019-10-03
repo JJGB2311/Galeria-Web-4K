@@ -1,19 +1,6 @@
-#contactanos
-{
-    /* background-color: rgb(41, 144, 212); */
-    margin: 0;
-    display: grid;
-    grid-template-columns: 55% auto;
-    grid-template-rows: auto auto 60px;
-    grid-template-areas: "enc enc"
-                        "form cont" 
-                        "footer footer";
-}
 #encabezado
 {
-    /* background-color: violet;    */    
-    text-align: center;    
-    grid-area: enc;
+    text-align: center;        
 }
 #encabezado h2
 {
@@ -28,9 +15,10 @@
 }
 #formulario
 {
-    background-color: blue;
-    color: black;
-    grid-area: form;
+    /*background-color: lightblue; */
+    color: black;    
+    border-style: dashed;
+    border-color: lightblue;
 }
 #formulario h2, options
 {
@@ -38,20 +26,17 @@
 }
 #contactos
 {
-    background-color: red;    
-    grid-area: cont;
+    /*background-color: lightblue;            */    
 }
 #contactos h3
 {
     color: black;
 }
 #pie
-{
-    /* background-color: brown; */
+{    
     color: black;
     padding: 20px;    
     text-align: center;
     font-family: "Tahoma";        
-    font-style: oblique;
-    grid-area: footer;
+    font-style: oblique;    
 }
