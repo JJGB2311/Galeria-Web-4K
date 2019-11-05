@@ -1,11 +1,23 @@
-
-/*Estilos del header*/
+/* Estilos del header */
+.navbar 
+{
+  min-height: 50px;
+} 
+.nav 
+{
+  margin-left: 10px;  
+  margin-right: 10px;  
+  /* width: auto; */  
+}
 .nav .navbar-nav li a{
   color: black !important;
+  background: white !important;
 }
-
 .nav .navbar-nav li a:hover{
-  background-color: rgb(59, 153, 216)!important;
-  color: white !important;
+  color: rgb(59, 153, 216) !important;
 }
-
+.logo-brand {
+  min-width: 130px;
+  max-width: 160px;
+  background-color: cyan !important;
+}

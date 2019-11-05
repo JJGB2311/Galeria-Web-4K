@@ -22,6 +22,7 @@ include("conexion.php");
   <body>
           <?php include("top_menu.php");?>
            <div class="row">
+               <br>
 			<div class="row">
 			  <div class="col-xs-12 text-right">
                   <center>
@@ -31,10 +32,10 @@ include("conexion.php");
 			  
 			</div>
 		  
-  	<div class='container'>
+  	<div class='container-fluid'>
 		<div class="row">
 			<div class="col-lg-12">
-                <h1 class="page-header">Galería de imágenes con Bootstrap, PHP y MySQL</h1>
+                <h1 class="text-center">Galería de imágenes con Bootstrap, PHP y MySQL</h1>
                 
 			<?php
 				$nums=1;
@@ -42,8 +43,8 @@ include("conexion.php");
 				while($rw_banner_top=mysqli_fetch_array($sql_banner_top)){
 					?>
 					
-					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-						<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $rw_banner_top['titulo'];?>" data-caption="<?php echo $rw_banner_top['descripcion'];	?>" data-image="img/banner/<?php echo $rw_banner_top['url_image'];?>" data-target="#image-gallery">
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 thumb">
+						<a class="thumbnail" style="width: 100%;" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $rw_banner_top['titulo'];?>" data-caption="<?php echo $rw_banner_top['descripcion'];	?>" data-image="img/banner/<?php echo $rw_banner_top['url_image'];?>" data-target="#image-gallery">
 							<img class="img-responsive" src="img/banner/<?php echo $rw_banner_top['url_image'];?>" alt="Another alt text">
 						</a>
 					</div>
