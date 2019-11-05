@@ -12,7 +12,7 @@ body {
  font-weight: bolder;
 } /*Color de fuente*/
 .nav-link:hover {
-  color: #09516d;
+  color: #2e9fcc;
   
 }
 .logo-brand {
@@ -28,13 +28,13 @@ body {
   outline: none;
 }
 p{
-  color: rgb(32, 119, 177);
+  color: rgb(78, 148, 199);
 }
 
 /*foorer*/
 
 .bg-dark {
-  background:rgb(9, 66, 92) !important;
+  background:rgb(56, 165, 216) !important;
 }
 #footer{
   padding: 30px 0;
