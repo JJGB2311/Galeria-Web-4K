@@ -1,13 +1,16 @@
 /* Estilos del header */
 .navbar 
 {
-  min-height: 50px;
+  /* min-height: 100px; */
 } 
 .nav 
 {
   margin-left: 10px;  
-  margin-right: 10px;  
+  margin-right: 30px; 
   /* width: auto; */  
+  min-height: 90px;
+  margin-top: 5px;
+  /* background-color: red !important; */
 }
 .nav .navbar-nav li a{
   color: black !important;

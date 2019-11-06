@@ -20,23 +20,27 @@ include("conexion.php");
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   </head>
   <body>
-          <?php include("top_menu.php");?>
-           <div class="row">
-               <br>
-			<div class="row">
-			  <div class="col-xs-12 text-right">
-                  <center>
-                  <a href='admin/banneradd.php' class="btn btn-default" ><span class="glyphicon glyphicon-plus"></span> Subir Foto</a>
-                  </center>
-			  </div>
-			  
-			</div>
+      <div class="row">
+      <?php include("top_menu.php");?>
+      <br><br><br><br><br><br><br>
+      </div>          
+              
 		  
   	<div class='container-fluid'>
+      <div class="row">               
+			    <div class="row">
+			        <div class="col-xs-12 text-right">                  
+                        <center>
+                            <a href='admin/banneradd.php' class="btn btn-default" ><span class="glyphicon glyphicon-plus"></span> Subir Foto</a>
+                        </center>
+                    </div>	
+                 <br><br> 		  
+                </div>
+            </div> 
 		<div class="row">
 			<div class="col-lg-12">
                 <h1 class="text-center">Galería de imágenes con Bootstrap, PHP y MySQL</h1>
-                
+                <br>
 			<?php
 				$nums=1;
 				$sql_banner_top=mysqli_query($con,"select * from banner where estado=1 order by orden ");
