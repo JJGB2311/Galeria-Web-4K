@@ -1,5 +1,10 @@
 <?php
 session_start();
+
+if(isset($_SESSION['email'])){
+
+	$user = $_SESSION['id'];
+}
 $title="Editar Banner";
 /* Llamar la Cadena de Conexion*/ 
 include ("../conexion.php");

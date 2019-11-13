@@ -1,5 +1,14 @@
-﻿    <!-- Fixed navbar -->
-    <head>
+<?php
+   session_start();
+
+    if(isset($_SESSION['email'])){
+
+      $nom = $_SESSION['nombre'];
+
+    }
+    ?>
+
+<head>
     <link rel="stylesheet" href="admin/css/estilosHeader2.css">
     </head>
     <nav class="navbar navbar-default navbar-fixed-top" style="background-color:greenyellow; border-style:none;">
@@ -10,13 +19,14 @@
        <div class="col col-xs-8 col-md-9">
          <div class="nav navbar-nav navbar-right">
           <ul class="nav navbar-nav" >    
-            <li class="active"><a href="#"                    style="background-color:white; border-style:none;"><i class='glyphicon glyphicon-user'>         </i> Usuario</a></li>
-            <li class="active"><a href="index.php"            style="background-color:white; border-style:none;"><i class='glyphicon glyphicon-picture'>      </i> Galería</a></li>
-            <li class="active"><a href="admin/bannerlist.php" style="background-color:white; border-style:none;"><i class='glyphicon glyphicon-picture'>      </i> Eliminar y Modificar</a></li>
-            <li class="active"><a href="bannerlist.php"       style="background-color:white; border-style:none;"><i class='glyphicon glyphicon-remove-circle'></i> Salir</a></li>            
-          </ul>      
+            <li class="active" ><a href="#"  style="background-color:white; border-style:none; "><i class='glyphicon glyphicon-user'></i>  <?php echo $nom ?></a></li>
+           <li class="active"><a href="index.php"  style="background-color:white; border-style:none;"><i class='glyphicon glyphicon-picture'></i> Galería</a></li>
+            <li class="active"><a href="admin/bannerlist.php"  style="background-color:white; border-style:none;"><i class='glyphicon glyphicon-picture'></i> Eliminar y Modificar</a></li>
+           <li class="active"><a href="logout.php"  style="background-color:white; border-style:none;"><i class=' glyphicon glyphicon-remove-circle '></i> Salir</a></li>
+      </ul>      
         </div>
        </div>
      </div>
     </nav>
+    <br>
   

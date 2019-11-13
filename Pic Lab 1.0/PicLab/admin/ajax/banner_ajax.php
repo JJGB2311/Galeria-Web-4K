@@ -1,5 +1,9 @@
 <?php
 session_start();
+if(isset($_SESSION['email'])){
+
+	$user = $_SESSION['id'];
+}
 /* Llamar la Cadena de Conexion*/ 
 include ("../../conexion.php");
 $action = (isset($_REQUEST['action'])&& $_REQUEST['action'] !=NULL)?$_REQUEST['action']:'';
@@ -16,7 +20,7 @@ if($action == 'ajax'){
 	
 	
 	$tables="banner";
-	$sWhere=" ";
+	$sWhere=" where id_user = '$user' ";
 	$sWhere.=" ";
 	
 	

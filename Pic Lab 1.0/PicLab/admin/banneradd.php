@@ -1,11 +1,12 @@
 <?php
 session_start();
+$user = $_SESSION['id'];
 $title="Agregar Banner";
 /* Llamar la Cadena de Conexion*/ 
 include ("../conexion.php");
 //Insert un nuevo producto
 $imagen_demo="demo.png";
-$insert=mysqli_query($con,"insert into banner (url_image, estado) values ('$imagen_demo','0')");
+$insert=mysqli_query($con,"insert into banner (url_image, estado, id_user) values ('$imagen_demo','0', '$user')");
 $sql_last=mysqli_query($con,"select LAST_INSERT_ID(id) as last from banner order by id desc limit 0,1");
 $rw=mysqli_fetch_array($sql_last);
 $id_banner=intval($rw['last']);

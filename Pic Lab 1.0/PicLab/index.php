@@ -1,4 +1,5 @@
 <?php 
+
 include("conexion.php");
 ?>
 <!DOCTYPE html>
@@ -19,8 +20,7 @@ include("conexion.php");
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   </head>
-  <body>
-      <div class="row">
+  <body> <div class="row">
       <?php include("top_menu.php");?>
       <br><br><br><br><br><br><br>
       </div>          
@@ -42,8 +42,15 @@ include("conexion.php");
                 <h1 class="text-center">Galería de imágenes con Bootstrap, PHP y MySQL</h1>
                 <br>
 			<?php
+          
+
+            if(isset($_SESSION['email'])){
+
+                 $user = $_SESSION['id'];
+                
+
 				$nums=1;
-				$sql_banner_top=mysqli_query($con,"select * from banner where estado=1 order by orden ");
+				$sql_banner_top=mysqli_query($con,"select * from banner where id_user = '$user' order by orden ");
 				while($rw_banner_top=mysqli_fetch_array($sql_banner_top)){
 					?>
 					
@@ -58,7 +65,14 @@ include("conexion.php");
 						echo '<div class="clearfix"></div>';
 					}
 					$nums++;
-				}
+                }}
+                
+                if(!isset($_SESSION['email'])){
+
+
+                    header("Location: index.html " );
+                }
+
 			?>
 						
 			</div>

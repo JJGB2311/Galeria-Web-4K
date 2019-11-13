@@ -5,6 +5,11 @@ include ("../conexion.php");
 $active_config="active";
 $active_banner="active";
 
+if(isset($_SESSION['email'])){
+
+	$user = $_SESSION['id'];
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

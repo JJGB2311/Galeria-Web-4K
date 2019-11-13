@@ -3,10 +3,10 @@ $emailbd = $_POST['email'];
 $passbd = $_POST['pass'];
 
 if (!empty($emailbd)||!empty($passbd)){
-    $host = 'basededatospiclab.c4uosfht3hej.us-east-1.rds.amazonaws.com';
-    $dbUsername = 'jjgb';
-    $dbPassword = 'JJGB6572019';
-    $dbName = 'PicLab';
+    $host = 'localhost';
+    $dbUsername = 'root';
+    $dbPassword = '';
+    $dbName = 'piclab';
 
     $conn = new mysqli($host,$dbUsername, $dbPassword, $dbName);
     if(mysqli_connect_error())
@@ -14,9 +14,9 @@ if (!empty($emailbd)||!empty($passbd)){
         die('Connect Error('. mysqli_connect_errno().')'. mysqli_connect_error());
     }else
     {
-        $SELECT = "SELECT emailbd From user Where emailbd= ? Limit 1";
+        $SELECT = "SELECT emailbd From user Where emailbd = ? Limit 1";
         $INSERT = "INSERT Into user (emailbd, passbd) values (?,?)";
-
+     
         $stmt = $conn->prepare($SELECT);
         $stmt->bind_param('s',$emailbd);
         $stmt->execute();

@@ -10,10 +10,10 @@ body {
 .nav-link {
   color: black;
  font-weight: bolder;
-} 
-/*Color de fuente*/
+} /*Color de fuente*/
 .nav-link:hover {
-  color: #2e9fcc;  
+  color: #2e9fcc;
+  
 }
 .logo-brand {
   min-width: 160px;
