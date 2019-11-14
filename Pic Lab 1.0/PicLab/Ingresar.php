@@ -3,9 +3,9 @@ $emailbd = $_POST['email'];
 $passbd = $_POST['pass'];
 
 if (!empty($emailbd)||!empty($passbd)){
-    $host = 'localhost';
-    $dbUsername = 'root';
-    $dbPassword = '';
+    $host = 'basededatospiclab.c4uosfht3hej.us-east-1.rds.amazonaws.com';
+    $dbUsername = 'jjgb';
+    $dbPassword = 'JJGB6572019';
     $dbName = 'piclab';
 
     $conn = new mysqli($host,$dbUsername, $dbPassword, $dbName);
