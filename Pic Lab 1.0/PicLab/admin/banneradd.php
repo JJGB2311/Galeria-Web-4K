@@ -1,6 +1,11 @@
 <?php
 session_start();
-$user = $_SESSION['id'];
+if(isset($_SESSION['email'])){
+
+	$user = $_SESSION['id'];
+
+  }
+
 $title="Agregar Banner";
 /* Llamar la Cadena de Conexion*/ 
 include ("../conexion.php");

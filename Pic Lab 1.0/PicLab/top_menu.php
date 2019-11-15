@@ -1,5 +1,5 @@
 <?php
-   session_start();
+  session_start();
 
     if(isset($_SESSION['email'])){
 
@@ -11,7 +11,7 @@
 <head>
     <link rel="stylesheet" href="admin/css/estilosHeader2.css">
     </head>
-    <nav class="navbar navbar-default navbar-fixed-top" style="background-color:greenyellow; border-style:none;">
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color:white; border-style:none;">
      <div class="row">
        <div class="col col-xs-4 col-md-3">
           <a class="navbar-brand" href="#"><img src="img/LOGO 2Km.jpg" class="logo-brand" alt="logo"></a>      

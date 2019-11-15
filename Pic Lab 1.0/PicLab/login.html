@@ -35,9 +35,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="singUp.html">Iniciar sesión</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link " href="login.html">Registrarse</a>
-            </li>
+           
             <li class="nav-item">
                 <a class="nav-link" href="Quienes somos.html">Quienes somos</a>
             </li>
@@ -63,7 +61,7 @@
                                 <form action="Ingresar.php" method="POST">
                                         <div class="form-label-group">
                                            
-                                            <input type="text" class="form-control" id="inputAddress" placeholder="Usuario" required autofocus>
+                                            <input type="text" class="form-control" name="nombre" id="inputAddress" placeholder="Usuario" required autofocus>
                                             <label for="inputAddress">Usuario</label>
                                         </div>
 
@@ -79,17 +77,13 @@
                                         <label for="inputPassword">Contraseña</label>
                                     </div>
                                         <div class="form-label-group">
-                                            <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                                            <input type="password" class="form-control" id="inputPassword2" placeholder="Password" name="pass2">
                                             <label for="inputPassword2">Repetir Contraseña</label>
                                         </div>
-
-                                    <div class="custom-control custom-checkbox mb-3">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                        <label style="color: white; " class="custom-control-label" for="customCheck1">Recordar Contraseña</label>
-                                    </div>
+                                        
                                     <button
                                         class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
-                                        type="submit">Registrarse</button>
+                                        type="submit"  >Registrarse</button>
                                     <div class="text-center">
                                        
                                        
