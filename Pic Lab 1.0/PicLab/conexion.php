@@ -1,8 +1,8 @@
 <?php
-$DB_HOST='localhost';
+$DB_HOST='basededatospiclab.c4uosfht3hej.us-east-1.rds.amazonaws.com';
 $DB_NAME= "piclab";
-$DB_USER= 'root';
-$DB_PASS= '';
+$DB_USER= 'jjgb';
+$DB_PASS= 'JJGB6572019';
 	# conectare la base de datos
     $con=@mysqli_connect($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
     if(!$con){

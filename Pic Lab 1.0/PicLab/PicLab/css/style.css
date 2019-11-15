@@ -1,0 +1,40 @@
+
+
+
+.logo 
+{
+  margin: auto;
+  width: 50%;
+  min-width: 240px;
+}
+.logonav 
+{
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 2%;
+  min-width: 240px;
+  background: #fff;
+}
+.logonav img {
+  width: 100%;
+  height: auto;
+}
+.logo img {
+  margin-left: 2%;
+  width: 95%;
+  height: 100%;
+  padding-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
