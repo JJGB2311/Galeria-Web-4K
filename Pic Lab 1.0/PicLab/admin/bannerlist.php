@@ -82,7 +82,7 @@ if(isset($_SESSION['email'])){
 	function eliminar_slide(id){
 		page=1;
 		var parametros = {"action":"ajax","page":page,"id":id};
-		if(confirm('Esta acción  eliminará de forma permanente el banner \n\n Desea continuar?')){
+		if(confirm('Esta acción  eliminará de forma permanente la imagen \n\n ¿Desea continuar?')){
 		$.ajax({
 			url:'./ajax/banner_ajax.php',
 			data: parametros,
