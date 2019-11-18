@@ -42,7 +42,7 @@ include("conexion.php");
                 <h1 class="text-center">Galería de imágenes con Bootstrap, PHP y MySQL</h1>
                 <br>
 			<?php
-        
+   
 
             if(isset($_SESSION['email'])){
 
@@ -67,10 +67,10 @@ include("conexion.php");
 					$nums++;
                 }}
                 
-                if(!isset($_SESSION['email'])){
+                else{
 
 
-                    header("Location: contactenos.html " );
+                    header("Location: index.html " );
                 }
 
 			?>

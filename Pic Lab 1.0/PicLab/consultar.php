@@ -4,7 +4,7 @@ $emailbd = $_POST['email'];
 $passbd = $_POST['pass'];
 
 if (!empty($emailbd)||!empty($passbd)){
-    $host = 'basededatospiclab.c4uosfht3hej.us-east-1.rds.amazonaws.com';
+     $host = 'basededatospiclab.c4uosfht3hej.us-east-1.rds.amazonaws.com';
     $dbUsername = 'jjgb';
     $dbPassword = 'JJGB6572019';
     $dbName = 'piclab';
@@ -19,23 +19,32 @@ if (!empty($emailbd)||!empty($passbd)){
         //$SELECT2= "SELECT id_user From user Where emailbd = ? Limit 1";
 
 
-        $resultados=mysqli_prepare($conn,$SELECT);
+       /* $resultados=mysqli_prepare($conn,$SELECT);
 		   
         $ok=mysqli_stmt_bind_param($resultados, 'ss', $emailbd, $passbd);
                
-        $ok=mysqli_stmt_execute($resultados);
+        $ok=mysqli_stmt_execute($resultados);*/
+
+        $stmt = $conn->prepare($SELECT);
+        $stmt->bind_param('ss',$emailbd, $passbd);
+        $stmt->execute();
+        $stmt->store_result();
+        $rnum = $stmt->num_rows;
         
-        if($ok==false){
+        
+        if($rnum == 0){
             
             header("Location: 404/404.html");
             
         } else{
          
-             mysqli_stmt_bind_result($resultados,$id_user,$nombre,$emailbd, $passbd);  
+            $stmt->bind_result($id_user,$nombre,$emailbd, $passbd);
+    
+           /*  mysqli_stmt_bind_result($resultados,$id_user,$nombre,$emailbd, $passbd);  */
              
              session_start();
 
-             while (mysqli_stmt_fetch($resultados)) {
+             while ($stmt->fetch()) {
                 
               $_SESSION['email']= $emailbd;
               $_SESSION['id']= $id_user;
@@ -49,28 +58,7 @@ if (!empty($emailbd)||!empty($passbd)){
               
             
         }
-     
-     
-    
-        /* $stmt = $conn->prepare($SELECT);
-        $stmt->bind_param('s',$emailbd);
-        $stmt->execute();
-        $stmt->bind_result($emailbd);
-        $stmt->store_result();
-        $rnum = $stmt->num_rows;*/
-        
-        
 
-
-            
-
-
-      
-     /*  if($rnum!=0){
-                        
-                 header("Location: index.php ");
-              
-                  }*/
   
     
         $conn->close();
