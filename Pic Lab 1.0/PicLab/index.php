@@ -39,7 +39,7 @@ include("conexion.php");
             </div> 
 		<div class="row">
 			<div class="col-lg-12">
-                <h1 class="text-center">Galería de imágenes con Bootstrap, PHP y MySQL</h1>
+                <h1 class="text-center">Galería de fotos PICLAB</h1>
                 <br>
 			<?php
    
