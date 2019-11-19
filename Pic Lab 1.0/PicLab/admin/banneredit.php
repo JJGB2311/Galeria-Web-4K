@@ -53,7 +53,7 @@ $active_banner="active";
       <div class="row">
 
 		 <div class="col-md-7">
-		 <h3 ><span class="glyphicon glyphicon-edit"></span> Editar banner</h3>
+		 <h3 ><span class="glyphicon glyphicon-edit"></span> Editar Foto</h3>
 			<form class="form-horizontal" id="editar_banner">
 				 
 			 

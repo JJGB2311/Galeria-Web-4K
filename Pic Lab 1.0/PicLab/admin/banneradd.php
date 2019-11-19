@@ -58,7 +58,7 @@ $active_banner="active";
       <div class="row">
 
 		 <div class="col-md-7">
-		 <h3 ><span class="glyphicon glyphicon-edit"></span> Editar banner</h3>
+		 <h3 ><span class="glyphicon glyphicon-edit"></span> Editar Foto</h3>
 			<form class="form-horizontal" id="editar_banner">
 				 
 			 
@@ -106,7 +106,7 @@ $active_banner="active";
 			  <div id='loader'></div>
 			  <div class='outer_div'></div>
 				<div class="col-sm-offset-3 col-sm-9">
-				  <button type="submit" class="btn btn-success">Actualizar datos</button>
+				  <button type="submit" class="btn btn-success">Guardar foto </button>
 				</div>
 			  </div>
 			</form>
