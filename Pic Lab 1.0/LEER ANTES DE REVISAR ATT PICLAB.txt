@@ -1,0 +1,5 @@
+Al momento de revisar el sitio web de manera local va a presentar algunos inconvenientes ya que se tiene que tener 
+conexión a una base de datos local para poderlo hacer funcionar correcta mente el sitio web, para revisar de la manera mas 
+practica y sencilla revisar en www.piclab.org. Esto lo adjunto ya que de manera local pude puede suceder que algunas 
+funciones del sitio web no funcione ya que tiene algunas conexiones al servidor de AWS, pero eso no quiere decir que no 
+funciona simple mente tiene que estar en un servidor y conectado a la base de datos. 
